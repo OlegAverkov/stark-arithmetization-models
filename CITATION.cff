@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software in academic work, please cite this repository."
+title: "STARK Arithmetization Models"
+type: software
+authors:
+  - family-names: "Averkov"
+    given-names: "Oleg"
+    affiliation: "V. N. Karazin Kharkiv National University"
+url: "https://github.com/OlegAverkov/stark-arithmetization-models"
+license: MIT
