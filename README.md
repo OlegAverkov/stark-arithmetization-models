@@ -30,7 +30,7 @@ The implemented workflow includes:
 
 ## Implementations
 
-The repository is being prepared to include:
+The repository includes::
 
 - a C++ implementation based on NTL;
 - a Magma implementation;
