@@ -68,7 +68,7 @@ used in the corresponding article.
 Files used for timing experiments:
 
 - [`cppglf_ifft_arithm_stark-v0.3.1.cpp`](src/cppglf_ifft_arithm_stark-v0.3.1.cpp)
-- [`mglf_ifft_arithm_stark-v0.12.0-timing-only.m`](src/mglf_ifft_arithm_stark-v0.12.0-timing-only.m)
+- [`mglf_ifft_arithm_stark-v0.12.0.m`](src/mglf_ifft_arithm_stark-v0.12.0.m)
 
 The published Magma v0.12.0 timing file is a cleaned archival copy.
 An obsolete memory-reporting block was removed because its output was
