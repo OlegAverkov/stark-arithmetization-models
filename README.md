@@ -67,8 +67,8 @@ used in the corresponding article.
 
 Files used for timing experiments:
 
-- [`cppglf_ifft_arithm_stark-v0.3.1.cpp`](src/cppglf_ifft_arithm_stark-v0.3.1.cpp)
-- [`mglf_ifft_arithm_stark-v0.12.0.m`](src/mglf_ifft_arithm_stark-v0.12.0.m)
+- [`cppglf_ifft_arithm_stark-v0.3.1_2026-09-19_i01.cpp`](src/cppglf_ifft_arithm_stark-v0.3.1_2026-09-19_i01.cpp)
+- [`mglf_ifft_arithm_stark-v0.12.0_2026-10-04_i01.m`](src/mglf_ifft_arithm_stark-v0.12.0_2026-10-04_i01.m)
 
 The published Magma v0.12.0 timing file is a cleaned archival copy.
 An obsolete memory-reporting block was removed because its output was
@@ -78,8 +78,8 @@ and therefore did not affect the timing results.
 
 Files used for memory experiments:
 
-- [`cppglf_ifft_arithm_stark-v0.4.0.cpp`](src/cppglf_ifft_arithm_stark-v0.4.0.cpp)
-- [`mglf_ifft_arithm_stark-v0.13.0.m`](src/mglf_ifft_arithm_stark-v0.13.0.m)
+- [`cppglf_ifft_arithm_stark-v0.4.0_2026-10-13_i01.cpp`](src/cppglf_ifft_arithm_stark-v0.4.0_2026-10-13_i01.cpp)
+- [`mglf_ifft_arithm_stark-v0.13.0_2026-10-13_i01.m`](src/mglf_ifft_arithm_stark-v0.13.0_2026-10-13_i01.m)
 
 Only the memory values produced by the dedicated memory-measurement
 versions were used in the article.
