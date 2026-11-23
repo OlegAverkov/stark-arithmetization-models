@@ -60,9 +60,32 @@ Magma itself, its binaries, installation files, and license keys are not include
 
 ## Reproducibility
 
-The repository provides source code and available experimental materials for independent evaluation of the implementations.
+This repository contains the source code and experimental materials
+used in the corresponding article.
 
-Information about tested software versions, input parameters, hardware configurations, and timing results will be added where available alongside the corresponding code versions and publications.
+### Source files
+
+Files used for timing experiments:
+
+- [`cppglf_ifft_arithm_stark-v0.3.1.cpp`](src/cppglf_ifft_arithm_stark-v0.3.1.cpp)
+- [`mglf_ifft_arithm_stark-v0.12.0-timing-only.m`](src/mglf_ifft_arithm_stark-v0.12.0-timing-only.m)
+
+The published Magma v0.12.0 timing file is a cleaned archival copy.
+An obsolete memory-reporting block was removed because its output was
+incorrect and was not used in the article. The removed block was
+executed after all reported timing values had already been recorded
+and therefore did not affect the timing results.
+
+Files used for memory experiments:
+
+- [`cppglf_ifft_arithm_stark-v0.4.0.cpp`](src/cppglf_ifft_arithm_stark-v0.4.0.cpp)
+- [`mglf_ifft_arithm_stark-v0.13.0.m`](src/mglf_ifft_arithm_stark-v0.13.0.m)
+
+Only the memory values produced by the dedicated memory-measurement
+versions were used in the article.
+
+Timing and memory measurements were performed under the software and
+hardware configurations described in the article.
 
 ## Publications
 
