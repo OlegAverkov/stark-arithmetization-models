@@ -138,6 +138,10 @@ both represent the polynomial `7x + 1`.
 - `Тип пам’яті` / `Тип памяти` — memory metric used for the measurement: Peak Working Set on Windows or `VmHWM` on Linux;
 - `Peak Working Set` / `PeakWorkingSetSize` / `PeakWorkingSetBytes` — maximum amount of physical memory resident for the Windows process since its start;
 - `VmHWM` — peak resident set size (resident-memory high-water mark) of the Linux process, as reported in `/proc/<pid>/status`;
+- `B` — bytes;
+- `kB` — kilobytes as reported by the operating system. For Linux `/proc`, one reported `kB` corresponds to 1024 bytes;
+- `MB` — megabytes; in these workbooks, `1 MB = 1024² B`;
+- `GB` — gigabytes; in these workbooks, `1 GB = 1024³ B`.
 
 ## Publications
 
