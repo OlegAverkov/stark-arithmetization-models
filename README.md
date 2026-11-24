@@ -87,6 +87,39 @@ versions were used in the article.
 Timing and memory measurements were performed under the software and
 hardware configurations described in the article.
 
+## Experimental data
+
+The [`data`](data/) directory contains the experimental materials used
+to evaluate and validate the C++/NTL and Magma implementations.
+
+- [`data/timing-statistics`](data/timing-statistics/) contains the original
+  timing workbooks. Each workbook reports ten consecutive runs for a
+  particular implementation and input size `N`, including the measured
+  IFFT, post-IFFT, and total runtimes, their mean values, and two-sided
+  95% Student's t-confidence intervals.
+
+- [`data/timing-results-validation`](data/timing-results-validation/)
+  contains the processed timing results, regression and figure source
+  data, comparisons between the implementations, and validation examples
+  over small finite fields. It also includes a Mathcad worksheet with
+  control calculations of FFT, IFFT, and composition polynomials.
+
+- [`data/memory-statistics-results`](data/memory-statistics-results/)
+  contains the peak resident-memory measurements for the tested input
+  sizes and the source data used to compare the memory scaling of the
+  C++/NTL and Magma implementations.
+
+In these materials, `N` denotes both the execution-trace length and the
+number of coefficients of the interpolation polynomial. The original
+workbooks are preserved with their formulas, formatting, and original
+working language.
+
+Polynomial coefficient sequences must be compared using the same ordering
+convention. The Mathcad worksheet lists coefficients in ascending order of
+degree, whereas the C++/NTL and Magma programs print them in descending
+order. For example, `[1, 7]` in Mathcad and `[7, 1]` in the program output
+both represent the polynomial `7x + 1`.
+
 ## Publications
 
 The corresponding research publications are currently in preparation.
