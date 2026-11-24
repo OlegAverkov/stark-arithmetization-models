@@ -87,6 +87,11 @@ versions were used in the article.
 Timing and memory measurements were performed under the software and
 hardware configurations described in the article.
 
+> **Note:** GitHub Linguist does not currently recognize Magma as a
+> separate programming language. Therefore, the Magma source files with
+> the `.m` extension may be automatically classified as MATLAB. All `.m`
+> files in the `src` directory contain Magma code, not MATLAB code.
+
 ## Experimental data
 
 The [`data`](data/) directory contains the experimental materials used
