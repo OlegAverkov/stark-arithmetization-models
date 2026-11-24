@@ -23,14 +23,16 @@ The implemented workflow includes:
 - manual or automatic initialization of roots of unity;
 - construction of the transition constraint
   $f(g^2x) - f(gx) - f(x)$
-- application of boundary factors;
+- application of a correction factor excluding the last two trace points
+from the transition constraint domain;
 - division by the subgroup vanishing polynomial;
-- separate timing of interpolation and post-interpolation verification stages;
+- separate timing of the IFFT interpolation and post-IFFT
+polynomial-processing stages;
 - experimental comparison of the C++/NTL and Magma implementations.
 
 ## Implementations
 
-The repository includes::
+The repository includes:
 
 - a C++ implementation based on NTL;
 - a Magma implementation;
