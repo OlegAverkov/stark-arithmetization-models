@@ -138,10 +138,27 @@ both represent the polynomial `7x + 1`.
 - `Тип пам’яті` / `Тип памяти` — memory metric used for the measurement: Peak Working Set on Windows or `VmHWM` on Linux;
 - `Peak Working Set` / `PeakWorkingSetSize` / `PeakWorkingSetBytes` — maximum amount of physical memory resident for the Windows process since its start;
 - `VmHWM` — peak resident set size (resident-memory high-water mark) of the Linux process, as reported in `/proc/<pid>/status`;
-- `B` — bytes;
-- `kB` — kilobytes as reported by the operating system. For Linux `/proc`, one reported `kB` corresponds to 1024 bytes;
-- `MB` — megabytes; in these workbooks, `1 MB = 1024² B`;
-- `GB` — gigabytes; in these workbooks, `1 GB = 1024³ B`.
+- `B` — byte;
+- `kB (Linux VmHWM)` — source unit reported by Linux `/proc`.
+  One reported `kB` was treated as 1024 bytes;
+- `MiB` — binary mebibyte used in the source Windows measurements,
+  where `1 MiB = 1024² B = 1,048,576 B`;
+- `MB` — decimal megabyte, where `1 MB = 10⁶ B`;
+- `GB` — decimal gigabyte, where `1 GB = 10⁹ B`.
+The original Linux and Windows memory measurements were reported in
+different units. Before comparison, all values were converted to bytes
+and then normalized to decimal gigabytes (`GB`).
+
+For Linux `VmHWM` values, the conversion was:
+
+`GB = VmHWM_kB × 1024 / 10⁹`.
+
+For Windows values reported in MiB, the conversion was:
+
+`GB = Memory_MiB × 1024² / 10⁹`.
+
+Therefore, all memory values shown in the comparison tables and figures
+use the same decimal gigabyte unit, where `1 GB = 1,000,000,000 B`.
 
 ## Publications
 
