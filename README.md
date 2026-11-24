@@ -120,6 +120,25 @@ degree, whereas the C++/NTL and Magma programs print them in descending
 order. For example, `[1, 7]` in Mathcad and `[7, 1]` in the program output
 both represent the polynomial `7x + 1`.
 
+### Terminology used in the workbooks
+
+- `Середній час` / `Среднее время` — mean runtime;
+- `Інтерполяція` / `Интерполяция` — interpolation stage performed using radix-2 IFFT;
+- `Час роботи Інтерполяції` / `Время работы Интерполяции` — IFFT interpolation runtime;
+- `Перевірка` / `Проверка` / `Verification` — post-IFFT stage. In these workbooks, this term does not mean verification of a complete STARK proof;
+- `Загальний час` / `Общее время` — total measured runtime of the IFFT and post-IFFT stages for one run;
+- `Довірчий інтервал` / `Доверительный интервал` — confidence interval;
+- `Інтервал у відсотках` / `Интервал в процентах` — relative margin of error, expressed as a percentage of the mean runtime;
+- `Вибіркова дисперсія` / `Выборочная дисперсия` — sample variance calculated using the divisor `r − 1`;
+- `Кількість прогонів` / `Количество прогонов` — number of consecutive runs;
+- `Кількість вхідних чисел Фібоначчі` / `Количество входных чисел Фибоначчи` — input size `N`, equal to the execution-trace length and the number of coefficients of the interpolation polynomial;
+- `Тест №` / `Тест №` — test number;
+- `Відсоток часу роботи всього алгоритму, який займає Інтерполяція` / `Процент общего времени, занимаемый Интерполяцией` — share of the total measured runtime spent in the IFFT interpolation stage;
+- `Відсоток часу роботи всього алгоритму, який займає Верифікація` / `Процент общего времени, занимаемый Верификацией` — share of the total measured runtime spent in the post-IFFT stage;
+- `Тип пам’яті` / `Тип памяти` — memory metric used for the measurement: Peak Working Set on Windows or `VmHWM` on Linux;
+- `Peak Working Set` / `PeakWorkingSetSize` / `PeakWorkingSetBytes` — maximum amount of physical memory resident for the Windows process since its start;
+- `VmHWM` — peak resident set size (resident-memory high-water mark) of the Linux process, as reported in `/proc/<pid>/status`;
+
 ## Publications
 
 The corresponding research publications are currently in preparation.
